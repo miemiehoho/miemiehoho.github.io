@@ -10,13 +10,11 @@ toc: true
 
 
 
-# KMS服务器搭建，office、windows激活
-
 > KMS服务器软件vlmcsd Github主页：https://github.com/Wind4/vlmcsd
 >
 > vlmcsd说明文档：http://wind4.github.io/vlmcsd/
 
-[TOC]
+
 
 ## KMS服务器搭建
 
