@@ -1,3 +1,15 @@
+---
+layout: post
+title: KMS服务器搭建，office、windows激活
+date: 2021-03-13
+Author: miemiehoho 
+tags: [KMS,office,windows]
+comments: true
+toc: true
+---
+
+
+
 # KMS服务器搭建，office、windows激活
 
 > KMS服务器软件vlmcsd Github主页：https://github.com/Wind4/vlmcsd
