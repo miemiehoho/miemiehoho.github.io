@@ -2,4 +2,4 @@
 
 # miemiehoho
 
-[Blogger](https://blog.miemiehoho.com/) [GitHub](https://github.com/miemiehoho) [开始阅读](https://github.com)
+[Blogger](https://blog.miemiehoho.com/) [GitHub](https://github.com/miemiehoho) [开始阅读](https://miemiehoho.github.io/#/)
