@@ -9,14 +9,82 @@
       q1.remove(team);
       q1.add(team);
 
-
 ## 常用方法
+
+**获取输入数字的高效率方法**
+
+```java
+private static StreamTokenizer st = new StreamTokenizer(new BufferedReader(new InputStreamReader(System.in)));
+private static int nextInt(){
+    try{
+        st.nextToken();
+        return (int)(st.nval);
+    }
+    catch(IOException e){
+        throw new RuntimeException(e);
+    }
+}
+```
 
 **判断是否数字**
 
 ```java
 Character.isDigit()
 ```
+
+## 正则表达式
+
+**匹配多个空格**
+
+```java
+String[] strs = s.split("\\s+");
+```
+
+## 字符串
+
+**使用join方法拼接字符串**
+
+```java
+public String reverseWords(String s) {
+    // 去除字符串开头和末尾的空白字符
+    s = s.trim();
+    // 正则匹配，以空白字符分割
+    List<String> stringList = Arrays.asList(s.split("\\s+"));
+    Collections.reverse(stringList);
+    // 使用join方法拼接字符串
+    return String.join(" ",stringList);
+    }
+```
+
+```java
+public String reverseWords(String s) {
+    s = s.trim();// 移除首尾空格
+    String[] strings = s.split("\\s+");
+    Deque<String> stack = new LinkedList<>();
+    for (String string : strings) {
+        stack.addFirst(string);
+    }
+    return String.join(" ", stack);
+}
+```
+
+## 字符
+
+**char 类型 数字转 对应 int 类型值**
+
+```java
+int a = Character.getNumericValue(num1.charAt(i));
+```
+
+**int类型到char类型强制转换**
+
+```java
+int a = '9';
+System.out.println((char) a);
+// 输出：9
+```
+
+
 
 ## [字符串](/docs/数据结构&算法/字符串/字符串.md)
 
@@ -91,6 +159,10 @@ B 树
 
 ## [二分查找](/docs/数据结构&算法/二分查找/二分查找.md)
 
+## 滑动窗口
+
+### [滑动窗口](/docs/数据结构&算法/滑动窗口/滑动窗口.md)
+
 ## 暴力递归与动态规划
 
 ### [从暴力递归到动态规划](/docs/数据结构&算法/动态规划/从暴力递归到动态规划.md)
@@ -103,7 +175,7 @@ B 树
 
 ## 经典算法
 
-### [常见算法](/docs/数据结构&算法/常见算法/常见算法.md)
+### [常见算法与经典算法题](/docs/数据结构&算法/常见算法与经典算法题/常见算法与经典算法题.md)
 
 
 
